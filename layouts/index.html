@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ range .Site.RegularPages.ByDate.Reverse }}
+    <div class="post" onclick="location.href='{{ .RelPermalink }}';">
+      <h3>⋆{{ .Title }}</h3>
+      {{ .Date.Format "02 January 2006" | lower }}
+    </div>
+  {{ end }}
+{{ end }}

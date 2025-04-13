@@ -1,0 +1,107 @@
+:root {
+  --lk: #ffff00;
+  --text: #fefefe;
+  --no: #b81800;
+  --bg: #000;
+}
+@font-face {
+  font-family: "FreePixel";
+  src: url("./FreePixel.ttf") format("truetype");
+}
+
+body {
+  font-family: "FreePixel", monospace;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./background.jpg");
+  color: var(--text);
+}
+
+a:hover {
+  color: var(--bg);
+  background: var(--lk);
+}
+a {
+  background: var(--bg);
+  color: var(--lk);
+}
+img {
+  max-width: 20vw;
+}
+
+.article {
+  word-wrap: break-word;
+  font-size: 20px;
+}
+
+.no {
+  color: var(--no);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.post {
+  cursor: pointer;
+}
+
+.post:hover > h3 {
+  color: var(--bg);
+  background: var(--lk);
+}
+
+.post > p {
+  color: white;
+}
+
+.post > h3 {
+  display: inline-block;
+  color: yellow;
+}
+
+
+main,
+header,
+footer {
+  max-width: 800px;
+  margin-left: 10%;
+  background: #010101;
+  padding: 0.2rem 0.5rem;
+}
+
+footer {
+  padding: 0px 0.5rem;
+}
+
+header {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.title {
+  animation: none;
+  text-align: left;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.title:hover {
+  color: var(--bg);
+  background: var(--lk);
+}
+
+pre {
+  padding: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+  main,
+  header,
+  footer {
+    max-width: 100%;
+    margin-left: 0%;
+  }
+}

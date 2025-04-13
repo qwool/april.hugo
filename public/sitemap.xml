@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:60589/</loc>
+    <lastmod>2025-04-13T21:38:08+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:60589/test3/</loc>
+    <lastmod>2025-04-13T21:38:08+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:60589/test2/</loc>
+    <lastmod>2025-04-13T21:37:46+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:60589/test/</loc>
+    <lastmod>2025-04-13T21:36:41+03:00</lastmod>
+  </url><url>
+    <loc>//localhost:60589/categories/</loc>
+  </url><url>
+    <loc>//localhost:60589/tags/</loc>
+  </url>
+</urlset>

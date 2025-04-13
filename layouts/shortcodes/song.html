@@ -1,0 +1,42 @@
+{{- $author := .Get "author" -}}
+{{- $name := .Get "name" -}}
+{{- $cover := .Get "cover" -}}
+{{- $url := .Get "url" -}}
+{{- $where := .Get "where" -}}
+<a href="{{ $url }}" style="display: inline-block; text-decoration: none;">
+  <span class="song">
+    <img class="cover" src="{{ $cover }}" />
+    <span class="details">
+      <span class="where">{{ $where }}</span>
+      <span class="author">{{ $author }} </span>
+      <span class="name">{{ $name }} </span>
+    </span>
+  </span>
+</a>
+<br />
+
+<style>
+  .song {
+    color: white;
+    display: flex;
+    padding: 0.1rem 0.2rem;
+    border: 2px solid white;
+  }
+  .song:hover {
+    color: black;
+    background-color: white;
+  }
+  .song > .details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .song > .where {
+    font-weight: light;
+  }
+
+  .song > .cover {
+    max-height: 64px;
+    max-width: 64px;
+  }
+</style>

@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  <div class="article">
+    {{ if .Params.unformatted }}
+      {{ with .RawContent }}
+        {{ $content := . }}
+        {{ $content = replaceRE "\\s*\\{#[^}]+\\}" "" $content }}
+        {{ $content = replaceRE "\\n" "<br/>" $content }}
+        {{ $content = replaceRE `\b(no)\b` `<span class="no">${1}</span>` $content }}
+        {{ $content | safeHTML }}
+      {{ end }}
+    {{ else }}
+      {{ .Content }}
+    {{ end }}
+  </div>
+{{ end }}
